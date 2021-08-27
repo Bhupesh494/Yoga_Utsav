@@ -1,0 +1,31 @@
+/* Buttons */
+.btn {
+}
+
+/* Blog */
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background: #00d9ff;
+}
+.blog__img > img {
+  width: 100%;
+}
+
+.blog__description {
+}
+
+
+
+<!-- <article class="blog">
+      <div class="blog__img">
+        <img src="/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg" alt="" />
+      </div>
+      <p class="blog__date">22 December 2020</p>
+      <p class="blog__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        fugit.
+      </p>
+    </article> -->
