@@ -45,3 +45,15 @@ a {
 .link:hover {
   color: #000;
 }
+
+/* lists */
+.list {
+  list-style: none;
+  padding: 0;
+  color: #8b8b8b;
+}
+
+.list__inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
