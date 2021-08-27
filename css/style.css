@@ -57,3 +57,36 @@ a {
   display: inline-block;
   margin-right: 2rem;
 }
+
+/* icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  color: var(--color-primary);
+}
+
+.icon--white {
+  color: #fff;
+}
+
+.icon-container {
+  background: #0a95ad;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
