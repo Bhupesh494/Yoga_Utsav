@@ -132,3 +132,53 @@ a {
 .btn__subscribe:hover {
   background-color: #ccc;
 }
+
+/* Inputs */
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  outline: 0;
+  color: orange;
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    font-size: 1.6rem;
+  }
+}
+
+/* forms */
+.newsletter {
+  height: auto;
+  background-image: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.update-form {
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__input {
+  background: transparent;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .update-form {
+    flex-direction: row;
+  }
+}
