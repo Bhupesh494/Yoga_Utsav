@@ -1,77 +1,57 @@
-<nav class="nav collapsible">
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Hosting</a></li>
-        <li class="nav__item"><a href="#">VPS</a></li>
-        <li class="nav__item"><a href="#">Domain</a></li>
-        <li class="nav__item"><a href="#">Pricing</a></li>
-      </ul>
-      <svg class="icon icon--white">
-        <use xlink:href="/images/sprite1.svg#chevron-circle-right-solid"></use>
-      </svg>
-    </nav>
-
-
-/* Navbar */
-/* Navigation Bar */
-
-.nav {
-  background: #000;
+body {
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 1rem;
+  justify-content: center;
   align-items: center;
 }
-
-.nav__list {
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: 0;
+  height: 100%;
+  background: url(images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
 }
-
-.nav__item {
-  padding: 0.5rem 2rem;
-  border-bottom: 1px solid #222;
+.hero-content {
+  position: relative;
+  font-family: "Monserrat", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
 }
-
-.nav__item > a {
-  color: #d2d0db;
-  transition: color 0.3s;
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
-
-.nav__item > a:hover {
-  color: #fff;
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
 }
-
-.nav__toggler {
-  opacity: 0.5;
-  transition: box-shadow 0.15s;
+.hero-button {
+  background-color: #ae2d59;
+  color: white;
+  border: 1px solid #cb376a;
+  margin-top: 5rem;
+  padding: 0.9375rem1.875rem;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
   cursor: pointer;
 }
-
-.nav.collapsible--expanded .nav__toggler {
-  opacity: 1;
-  box-shadow: 0 0 0 3px #666;
-  border-radius: 5px;
-}
-
-.nav__brand {
-  transform: translateY(5px);
-}
-
-@media screen and (min-width: 768px) {
-  .nav__toggler {
-    display: none;
-  }
-
-  .nav__list {
-    width: auto;
-    display: flex;
-    font-size: 1.6rem;
-    max-height: 100%;
-    opacity: 1;
-  }
-
-  .nav__item {
-    border: 0;
-  }
+.hero-button:hover {
+  background-color: #cb376a;
+  border: 1px solid #db7598;
 }

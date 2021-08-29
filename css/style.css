@@ -452,3 +452,67 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+/* Blocks */
+.block {
+  background: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  margin: 2rem;
+  position: relative;
+  height: 400px;
+}
+
+.hero__heading {
+  font-size: 4rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container-block {
+  display: flex;
+  flex-direction: row;
+  /* work needed */
+  align-content: space-between;
+}
+
+.hero__image {
+  opacity: 0;
+  width: 100%;
+}
+
+.container {
+}
+
+/* Hero */
+
+.hero__tagline {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__content {
+  padding-left: 10rem;
+}
+
+.hero--icon {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+}
+@media screen and (max-width: 768px) {
+  .hero__image {
+    display: none;
+  }
+
+  .hero__content {
+    padding-left: 0;
+    text-align: center;
+  }
+}
