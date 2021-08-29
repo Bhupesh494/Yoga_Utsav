@@ -1,28 +1,77 @@
+<nav class="nav collapsible">
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+      <svg class="icon icon--white">
+        <use xlink:href="/images/sprite1.svg#chevron-circle-right-solid"></use>
+      </svg>
+    </nav>
 
-/* Blog */
 
-.blog {
+/* Navbar */
+/* Navigation Bar */
+
+.nav {
+  background: #000;
   display: flex;
-  flex-direction: column;
-  width: 30vw;
-  background: #00d9ff;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
 }
-.blog__img > img {
+
+.nav__list {
   width: 100%;
+  margin: 0;
 }
 
-.blog__description {
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
 }
 
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
 
+.nav__item > a:hover {
+  color: #fff;
+}
 
-<!-- <article class="blog">
-      <div class="blog__img">
-        <img src="/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg" alt="" />
-      </div>
-      <p class="blog__date">22 December 2020</p>
-      <p class="blog__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        fugit.
-      </p>
-    </article> -->
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
