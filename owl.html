@@ -28,137 +28,53 @@
     />
 
     <!-- Custom Style Sheet -->
-    <!-- <link rel="stylesheet" href="css/owl.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
   </head>
 
   <body>
-    <div class="owl-carousel owl-theme">
-      <div class="block-container owl-slider__container slide slide-1">
-        <article class="grid grid--1x2 feature">
-          <picture class="slider__image-container">
-            <img class="feature__image" src="images/computer.jpg" alt="" />
-          </picture>
-          <div class="slider__content">
-            <p class="slider__date">8th-18th NOV,2019</p>
-            <h3 class="slider__heading">
-              11days of Wisdom, Growth & Evolution
-            </h3>
-            <p class="slider__location">Location Name, mumbai</p>
-            <p class="feature__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <div>
-              <span class="badge--slider">
-                Early bird price INR 48,000 <s>INR60,000</s>
-              </span>
-            </div>
-            <button type="submit" class="btn btn__primary">Submit</button>
-            <a href="#" class="link">links more</a>
-          </div>
-        </article>
-      </div>
-      <div class="block-container owl-slider__container slide slide-2">
-        <article class="grid grid--1x2 feature">
-          <picture class="slider__image-container">
-            <img class="feature__image" src="images/computer.jpg" alt="" />
-          </picture>
-          <div class="slider__content">
-            <p class="slider__date">8th-18th NOV,2019</p>
-            <h3 class="slider__heading">
-              11days of Wisdom, Growth & Evolution
-            </h3>
-            <p class="slider__location">Location Name, mumbai</p>
-            <p class="feature__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <div>
-              <span class="badge--slider">
-                Early bird price INR 48,000 <s>INR60,000</s>
-              </span>
-            </div>
-            <button type="submit" class="btn btn__primary">Submit</button>
-            <a href="#" class="link">links more</a>
-          </div>
-        </article>
-      </div>
-      <div class="block-container owl-slider__container slide slide-3">
-        <article class="grid grid--1x2 feature">
-          <picture class="slider__image-container">
-            <img class="feature__image" src="images/computer.jpg" alt="" />
-          </picture>
-          <div class="slider__content">
-            <p class="slider__date">8th-18th NOV,2019</p>
-            <h3 class="slider__heading">
-              11days of Wisdom, Growth & Evolution
-            </h3>
-            <p class="slider__location">Location Name, mumbai</p>
-            <p class="feature__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              obcaecati vel ad unde est illo at. Labore excepturi officia
-              dolores!
-            </p>
-            <div>
-              <span class="badge--slider">
-                Early bird price INR 48,000 <s>INR60,000</s>
-              </span>
-            </div>
-            <button type="submit" class="btn btn__primary">Submit</button>
-            <a href="#" class="link">links more</a>
-          </div>
-        </article>
-      </div>
-    </div>
+    <section class="blog-container">
+      <h1 class="blog-section__heading">Blogs</h1>
+      <div class="flex">
+        <div class="col">
+          <a href="#">
+            <img src="/images/computer.jpg" alt="Some sample words" />
+          </a>
+          <h2 class="blog__heading">Teaching Yoga Part 1</h2>
+          <p class="blog__date">22 December 2020</p>
+          <p class="blog__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            fugit.
+          </p>
+          <button type="submit" class="btn btn__primary">Submit</button>
+        </div>
 
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Custom Javascript -->
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 1,
-          loop: true,
-          nav: true,
-          dots: true,
-          autoplay: true,
-          autoplaySpeed: 1000,
-          smartSpeed: 1500,
-          autoplayHoverPause: true,
-        });
-      });
-    </script>
+        <div class="col">
+          <a href="#">
+            <img src="/images/computer.jpg" alt="Some sample words" />
+          </a>
+          <h2 class="blog__heading">Teaching Yoga Part 1</h2>
+          <p class="blog__date">22 December 2020</p>
+          <p class="blog__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            fugit.
+          </p>
+          <button type="submit" class="btn btn__primary">Submit</button>
+        </div>
+
+        <div class="col">
+          <a href="#">
+            <img src="/images/computer.jpg" alt="Some sample words" />
+          </a>
+          <h2 class="blog__heading">Teaching Yoga Part 1</h2>
+          <p class="blog__date">22 December 2020</p>
+          <p class="blog__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            fugit.
+          </p>
+          <button type="submit" class="btn btn__primary">Submit</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
-
-<!-- <section class="block-container owl-slider__container">
-    <article
-      class="grid grid--1x2 feature"
-    >
-      <picture class="slider__image-container">
-        <img class="feature__image" src="images/computer.jpg" alt="" />
-      </picture>
-      <div class="slider__content">
-        <p class="slider__date">8th-18th NOV,2019</p>
-        <h3 class="slider__heading">11days of Wisdom, Growth & Evolution</h3>
-        <p class="slider__location">Location Name, mumbai</p>
-        <p class="feature__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-          obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-        </p>
-        <div>
-          <span class="badge--slider">
-            Early bird price INR 48,000 <s>INR60,000</s>
-          </span>
-        </div>
-        <button type="submit" class="btn btn__primary">Submit</button>
-        <a href="#" class="link">links more</a>
-
-      </div>
-    </article>
-  </section> -->
