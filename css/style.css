@@ -144,15 +144,16 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 4rem;
+  padding: 1.3rem 3rem;
   text-align: center;
   text-transform: capitalize;
   white-space: nowrap;
 }
 
 .btn__primary {
+  font-weight: 300;
   color: #666666;
-  border: 2px solid #666666;
+  border: 1px solid #666666;
 }
 
 .btn__primary:hover {
@@ -454,7 +455,7 @@ a {
 }
 
 /* Blocks */
-.block {
+.hero__block {
   background: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
   padding: 2rem;
   background-size: cover;
@@ -483,7 +484,7 @@ a {
   width: 100%;
 }
 
-.container {
+.hero__container {
 }
 
 /* Hero */
@@ -515,4 +516,225 @@ a {
     padding-left: 0;
     text-align: center;
   }
+}
+
+/* gf */
+/* ggg */
+/* block */
+.block-container {
+  padding: 2rem;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+/* container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* features */
+/* Features Block*/
+.feature {
+  margin: 0rem;
+}
+
+.feature__heading {
+  margin: 0rem 0;
+  font-size: 3rem;
+}
+
+.feature__image {
+  width: 100%;
+  height: 100%;
+}
+
+.feature__description {
+  font-size: 1.4rem;
+}
+
+.feature__image-container {
+}
+
+.feature__content {
+  padding: 1.5rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__image-container {
+    order: 2;
+  }
+
+  .feature:nth-of-type(odd) .feature__image-container {
+    border-right: 1.5px solid black;
+  }
+
+  .feature:nth-of-type(even) .feature__content {
+    text-align: right;
+    border-right: 1.5px solid black;
+    padding: 4rem 4rem 4rem 0;
+  }
+  .feature:nth-of-type(odd) .feature__content {
+    text-align: left;
+    padding: 4rem 0 4rem 4rem;
+  }
+
+  .block-container {
+    padding: 6rem;
+  }
+}
+
+/* Showcase Block */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
+}
+
+/* owl slider */
+.owl-slider__container {
+  padding: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .owl-slider__container {
+    padding: 6rem;
+  }
+}
+.slider__content {
+}
+
+.slider__location {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+.slider__heading {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.slider__date {
+  font-size: 1.8rem;
+  margin: 0%;
+  color: var(--color-accent);
+}
+
+/* owl slider carousel */
+
+.owl-carousel {
+  width: 100%;
+  height: auto;
+  background: #fff5e7;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.owl-dots {
+  width: 100%;
+  /* padding: 2rem 0; */
+  text-align: center;
+  position: absolute;
+  bottom: -10%;
+}
+
+.owl-dots span {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.owl-dots button {
+  border: none !important;
+  outline: none !important;
+}
+
+.owl-nav button {
+  border: none !important;
+  outline: none !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000 !important;
+  font-size: 65px !important;
+  font-weight: bolder !important;
+  background: none !important;
+}
+
+.owl-prev {
+  left: 1%;
+}
+
+.owl-next {
+  right: 1%;
+}
+
+/* badges */
+.badge-container {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  text-align: center;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.badge--slider {
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  text-align: center;
+  background: transparent;
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  border: 1.3px solid var(--color-accent);
+}
+
+s {
+  display: inline;
+  color: var(--color-body-darker);
 }

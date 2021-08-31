@@ -11,22 +11,60 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <!-- <link rel="stylesheet" href="/css/playground.css" /> -->
+    
   </head>
   <body>
-    <section class="block">
-      <div class="container container-block">
+    <header class="nav-bar">
+      <div class="logo">
+        <img src="images/yoga-logo.png" alt="" />
+      </div>
+      <div>
+        <nav class="nav collapsible">
+          <svg class="icon icon--primary nav__toggler">
+            <use xlink:href="images/sprite.svg#bars-solid"></use>
+          </svg>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Program</a></li>
+            <li class="nav__item"><a href="#">Media & Gallery</a></li>
+            <li class="nav__item"><a href="#">Testimonial</a></li>
+            <li class="nav__item"><a href="#">Blog</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero__block">
+      <div class="hero__container container-block">
         <picture>
           <img class="hero__image" src="images/yoga-logo.png" alt="" />
         </picture>
         <header class="hero__content">
           <h1 class="hero__heading">your mind and soul is beautiful</h1>
           <p class="hero__tagline">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, magni harum necessitatibus hic deleniti laboriosam iure
-            sunt et placeat sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+            magni harum necessitatibus hic deleniti laboriosam iure sunt et placeat
+            sit.
           </p>
         </header>
       </div>
@@ -34,7 +72,111 @@
         <use xlink:href="images/sprite.svg#mouse-solid"></use>
       </svg>
     </section>
+    <div class="container">
+      <div class="title">
+        <h2 class="quote quote--yellow">health</h2>
+        <h2 class="quote quote--orange">.happiness.</h2>
+        <h2 class="quote quote--green">divinity</h2>
+      </div>
+      <div class="describe">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, officia
+          voluptates voluptatem ex eveniet repellat.
+        </p>
+      </div>
+      <p class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque aut
+        velit fugiat officiis expedita, dolores nesciunt nam sint temporibus cum
+        pariatur quam distinctio deserunt. Ullam ab necessitatibus harum, quaerat
+        non impedit similique asperiores quos doloribus quo iste, illum blanditiis
+        iusto!
+      </p>
+    </div>
+    <div class="badge-container">
+      <span class="badge">
+        Upcoming Events
+      </span>
+    </div>
+    <section class="block-container container">
+      </header>
+      <article class="grid grid--1x2 feature" >
+        <div class="feature__image-container">
+          <img class="feature__image" src="images/computer.jpg" alt="" />
+        </div>
+        <div class="feature__content">
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p class="feature__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <button type="submit" class="btn btn__primary">Submit</button>
+          <button type="submit" class="btn btn__primary">Submit</button>
+        </div>
+      </article>
+      <article class="grid grid--1x2 feature" >
+        <picture class="feature__image-container">
+          <img class="feature__image" src="images/computer.jpg" alt="" />
+        </picture>
+        <div class="feature__content">
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p class="feature__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <button type="submit" class="btn btn__primary">Submit</button>
+          <button type="submit" class="btn btn__primary">Submit</button>
+        </div>
+      </article>
+      <article
+        class="grid grid--1x2 feature"
+      >
+        <picture class="feature__image-container">
+          <img class="feature__image" src="images/computer.jpg" alt="" />
+        </picture>
+        <div class="feature__content">
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p class="feature__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <button type="submit" class="btn btn__primary">Submit</button>
+          <button type="submit" class="btn btn__primary">Submit</button>
+        </div>
+      </article>
+    </section>
+    <div class="badge-container">
+      <span class="badge">
+        Upcoming Events
+      </span>
+    </div>
+    <section class="block-container owl-slider__container">
+      <article
+        class="grid grid--1x2 feature"
+      >
+        <picture class="slider__image-container">
+          <img class="feature__image" src="images/computer.jpg" alt="" />
+        </picture>
+        <div class="slider__content">
+          <p class="slider__date">8th-18th NOV,2019</p>
+          <h3 class="slider__heading">11days of Wisdom, Growth & Evolution</h3>
+          <p class="slider__location">Location Name, mumbai</p>
+          <p class="feature__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          </p>
+          <div>
+            <span class="badge--slider">
+              Early bird price INR 48,000 <s>INR60,000</s>
+            </span>
+          </div>
+          <button type="submit" class="btn btn__primary">Submit</button>
+          <a href="#" class="link">links more</a>
 
+        </div>
+      </article>
+    </section>
+    
+    
     <script src="js/main.js"></script>
   </body>
 </html>
