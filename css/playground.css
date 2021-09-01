@@ -10,7 +10,6 @@
   flex-flow: row wrap;
   padding: 20px;
   color: #fff;
-  background-color: orangered;
 }
 
 .footer > * {
@@ -25,8 +24,9 @@
 }
 
 .features > h2 {
-  font-weight: 400;
+  font-weight: bolder;
   font-size: 15px;
+  color: rgb(94, 94, 94);
 }
 
 .footer ul {
@@ -53,7 +53,7 @@
 }
 
 .box a {
-  color: #fff;
+  color: #8b8b8b;
 }
 
 .h-box {
@@ -63,8 +63,9 @@
 
 .b-footer {
   text-align: center;
-  color: #fff;
-  padding-top: 50px;
+  color: #8b8b8b;
+  border-top: 2px solid #8b8b8b;
+  padding-top: 1rem;
 }
 
 .l-footer p {
@@ -75,6 +76,7 @@
 .footer__img {
   width: 8rem;
   height: 7rem;
+  border-bottom: 5px solid gold;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,5 +94,9 @@
 
   .r-footer {
     flex: 2 0px;
+  }
+
+  .footer__img {
+    border-bottom: 0;
   }
 }

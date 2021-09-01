@@ -32,13 +32,17 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="css/playground.css" />
     
+    <!-- Animate on scroll style sheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
+    <div id="preloader"></div>
     <header class="nav-bar">
       <div class="logo">
-        <img src="images/yoga-logo.png" alt="" />
+        <img src="images/yoga-logo.png" alt="image of person doing meditation" />
       </div>
-      <div>
+      <div class="navBar">
         <nav class="nav collapsible">
           <svg class="icon icon--primary nav__toggler">
             <use xlink:href="images/sprite.svg#bars-solid"></use>
@@ -55,7 +59,7 @@
         </nav>
       </div>
     </header>
-    <section class="hero__block">
+    <section class="hero__block" data-aos="zoom-in">
       <div class="hero__container container-block">
         <picture>
           <img class="hero__image" src="images/yoga-logo.png" alt="" />
@@ -69,11 +73,11 @@
           </p>
         </header>
       </div>
-      <svg class="icon icon--white hero--icon">
+      <svg class="icon icon--small hero--icon">
         <use xlink:href="images/sprite.svg#mouse-solid"></use>
       </svg>
     </section>
-    <div class="container">
+    <div class="container container--modified" data-aos="zoom-in-up">
       <div class="title">
         <h2 class="quote quote--yellow">health</h2>
         <h2 class="quote quote--orange">.happiness.</h2>
@@ -95,53 +99,52 @@
     </div>
     <div class="badge-container">
       <span class="badge">
-        Upcoming Events
+        Program
       </span>
     </div>
     <section class="block-container container">
       </header>
       <article class="grid grid--1x2 feature" >
-        <div class="feature__image-container">
+        <div class="feature__image-container" data-aos="fade-right">
           <img class="feature__image" src="images/computer.jpg" alt="" />
         </div>
-        <div class="feature__content">
-          <h3 class="feature__heading">Super Easy to Use</h3>
+        <div class="feature__content" data-aos="fade-left">
+          <h3 class="feature__heading">Workshops</h3>
           <p class="feature__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
           </p>
-          <button type="submit" class="btn btn__primary">Submit</button>
-          <button type="submit" class="btn btn__primary">Submit</button>
+          <button type="submit" class="btn btn__primary">Learn More</button>
+          <button type="submit" class="btn btn__primary">Enroll for next one</button>
         </div>
       </article>
       <article class="grid grid--1x2 feature" >
-        <picture class="feature__image-container">
+        <picture class="feature__image-container" data-aos="fade-right">
           <img class="feature__image" src="images/computer.jpg" alt="" />
         </picture>
-        <div class="feature__content">
-          <h3 class="feature__heading">Super Easy to Use</h3>
+        <div class="feature__content" data-aos="fade-left">
+          <h3 class="feature__heading">Retreats</h3>
           <p class="feature__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
           </p>
-          <button type="submit" class="btn btn__primary">Submit</button>
-          <button type="submit" class="btn btn__primary">Submit</button>
+          <button type="submit" class="btn btn__primary">Learn More</button>
+          <button type="submit" class="btn btn__primary">Enroll for next one</button>
         </div>
       </article>
       <article
         class="grid grid--1x2 feature"
       >
-        <picture class="feature__image-container">
+        <picture class="feature__image-container" data-aos="fade-right">
           <img class="feature__image" src="images/computer.jpg" alt="" />
         </picture>
-        <div class="feature__content">
-          <h3 class="feature__heading">Super Easy to Use</h3>
+        <div class="feature__content" data-aos="fade-left">
+          <h3 class="feature__heading">Corporate Training</h3>
           <p class="feature__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
           </p>
-          <button type="submit" class="btn btn__primary">Submit</button>
-          <button type="submit" class="btn btn__primary">Submit</button>
+          <button type="submit" class="btn btn__primary">Learn More</button>
         </div>
       </article>
     </section>
@@ -233,7 +236,7 @@
     <section class="blog-container">
       <h1 class="blog-section__heading">Blogs</h1>
       <div class="flex">
-        <div class="col">
+        <div class="col" data-aos="zoom-in-right">
           <a href="#">
             <img src="/images/computer.jpg" alt="Some sample words" />
           </a>
@@ -246,7 +249,7 @@
           <button type="submit" class="btn btn__accent">Submit</button>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="zoom-in">
           <a href="#">
             <img src="/images/computer.jpg" alt="Some sample words" />
           </a>
@@ -259,7 +262,7 @@
           <button type="submit" class="btn btn__primary">Submit</button>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="zoom-in-left">
           <a href="#">
             <img src="/images/computer.jpg" alt="Some sample words" />
           </a>
@@ -274,7 +277,10 @@
       </div>
     </section>
     <div class="newsletter">
-      <form action="" class="update-form">
+      <p class="newsletter__heading" data-aos="fade-down">
+        Subscribe for latest updates on upcoming workshops & Retreats
+      </p>
+      <form action="" class="update-form" data-aos="zoom-in">
         <input
           type="text"
           name="name"
@@ -289,8 +295,9 @@
         />
         <button type="submit" class="btn btn__subscribe">Subscribe</button>
       </form>
+      <p class="newsletter__link" data-aos="fade-up">Benefits of being on our mailing list</p>
     </div>
-    <section class="footer-container">
+    <section class="footer-container" data-aos="zoom-in">
       <footer class="footer">
         <div class="l-footer">
           <h1>
@@ -354,5 +361,20 @@
         });
       });
     </script>
+    <!-- preloader for website -->
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function(){
+      loader.style.display = "none";
+      })
+    </script>
+    <!-- Animate on Scroll Javascript file -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+
   </body>
 </html>
