@@ -526,11 +526,11 @@ a {
 
 /* Blocks */
 .hero__block {
-  background: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+  background: url(/images/pexels.webp);
   padding: 2rem;
   background-size: cover;
   background-position: center;
-  margin: 2rem;
+  margin: 0.5rem;
   position: relative;
 }
 
@@ -562,8 +562,9 @@ a {
   width: 100%;
 }
 
-.hero__container {
-}
+/* .hero__container {
+  
+} */
 
 /* Hero */
 
@@ -659,8 +660,8 @@ a {
   font-size: 1.4rem;
 }
 
-.feature__image-container {
-}
+/* .feature__image-container {
+} */
 
 .feature__content {
   padding: 1.5rem 1rem;
@@ -837,7 +838,7 @@ a {
 
 .badge {
   display: inline-block;
-  padding: 0.2rem 2rem;
+  padding: 0.4rem 4rem;
   text-align: center;
   background-color: var(--color-accent);
   color: #fff;
@@ -860,7 +861,7 @@ s {
 }
 
 #preloader {
-  background: #fff url(/images/Reload.gif) no-repeat center;
+  background: #fff url(/images/Reload.gif) no-repeat center center;
   height: 100vh;
   width: 100%;
   background-size: 50%;
